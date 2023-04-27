@@ -1,0 +1,3 @@
+C:/Users/orhan/CLionProjects/PolygonLineValidator/cmake-build-debug/CMakeFiles/PolygonLineValidator.dir
+C:/Users/orhan/CLionProjects/PolygonLineValidator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/orhan/CLionProjects/PolygonLineValidator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
