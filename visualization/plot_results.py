@@ -125,8 +125,8 @@ def main(input_file: str, result_file: str):
 
 
 if __name__ == "__main__":
-    input_file = "../input/q1_example_input[516].txt"
-    result_file = "../results/q1_example_output[512].txt"
+    input_file = "../test/input/q1_example_input[516].txt"
+    result_file = "../test/results/q1_example_output[512].txt"
     main(input_file, result_file)
 
 
