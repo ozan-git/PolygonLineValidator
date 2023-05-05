@@ -128,23 +128,3 @@ if __name__ == "__main__":
     input_file = "../test/input/q1_example_input[516].txt"
     result_file = "../test/results/q1_example_output[512].txt"
     main(input_file, result_file)
-
-
-
-# Here function and class class's functions list of this file
-# 1. DrawingStrategy.draw(self, ax)
-# 2. PolygonDrawingStrategy.__init__(self, polygon)
-# 3. PolygonDrawingStrategy.draw(self, ax)
-# 4. PassageDrawingStrategy.__init__(self, passage)
-# 5. PassageDrawingStrategy.draw(self, ax)
-# 6. TestPointsDrawingStrategy.__init__(self, start, end, result)
-# 7. TestPointsDrawingStrategy.draw(self, ax)
-# 8. DrawingContext.__init__(self)
-# 9. DrawingContext.add_strategy(self, strategy)
-# 10. DrawingContext.draw_all(self, ax)
-# 11. read_input_file(file_path: str) -> Tuple[List[List[Tuple[float, float]]], List[Tuple[Tuple[float, float], Tuple[float, float]]], List[Tuple[Tuple[float, float], Tuple[float, float]]]]
-# 12. read_result_file(file_path: str) -> List[int]
-# 13. main(input_file: str, result_file: str)
-
-
-
