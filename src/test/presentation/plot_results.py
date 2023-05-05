@@ -1,3 +1,24 @@
+"""
+
+@file plot_results.py
+@brief This file contains code to visualize the results of a passability test using the visibility graph algorithm.
+@date 2023-05-01
+@author ozan-git
+
+@detail This file contains code to read the input and result files of a passability test, and then visualize the
+polygons, passages, and test points using Matplotlib. The result of each test point is shown with a green line
+if it is passable and a red line if it is not. The input file is assumed to be in the format specified in the
+assignment.
+
+@technical_details Open-Closed Principle: The DrawingContext class is open for extension and closed for modification.
+The DrawingContext class is open for the extension because it can be extended with new drawing strategies.
+The DrawingContext class is closed for modification because it does not need to be modified when new drawing strategies
+are added.
+Single Responsibility Principle: The DrawingContext class has a single responsibility which is to draw all the drawing
+strategies it contains.
+
+"""
+
 from typing import List, Tuple
 import matplotlib.pyplot as plt
 
@@ -104,6 +125,26 @@ def main(input_file: str, result_file: str):
 
 
 if __name__ == "__main__":
-    input_file = "input/q1_example_input[516].txt"
-    result_file = "results/q1_example_output[512].txt"
+    input_file = "../input/q1_example_input[516].txt"
+    result_file = "../results/q1_example_output[512].txt"
     main(input_file, result_file)
+
+
+
+# Here function and class class's functions list of this file
+# 1. DrawingStrategy.draw(self, ax)
+# 2. PolygonDrawingStrategy.__init__(self, polygon)
+# 3. PolygonDrawingStrategy.draw(self, ax)
+# 4. PassageDrawingStrategy.__init__(self, passage)
+# 5. PassageDrawingStrategy.draw(self, ax)
+# 6. TestPointsDrawingStrategy.__init__(self, start, end, result)
+# 7. TestPointsDrawingStrategy.draw(self, ax)
+# 8. DrawingContext.__init__(self)
+# 9. DrawingContext.add_strategy(self, strategy)
+# 10. DrawingContext.draw_all(self, ax)
+# 11. read_input_file(file_path: str) -> Tuple[List[List[Tuple[float, float]]], List[Tuple[Tuple[float, float], Tuple[float, float]]], List[Tuple[Tuple[float, float], Tuple[float, float]]]]
+# 12. read_result_file(file_path: str) -> List[int]
+# 13. main(input_file: str, result_file: str)
+
+
+
