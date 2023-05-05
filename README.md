@@ -181,6 +181,15 @@ python3 plot_results.py
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Create a pull request.
+
+Please make sure that your code adheres to the existing style and passes the existing tests before submitting a pull request.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
