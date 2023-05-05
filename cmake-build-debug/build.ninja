@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/orhan/CLionProjects/PolygonLineValidator/cmake-b
 
 build cmake_object_order_depends_target_PolygonLineValidator: phony || CMakeFiles/PolygonLineValidator.dir
 
-build CMakeFiles/PolygonLineValidator.dir/Main/main.cpp.obj: CXX_COMPILER__PolygonLineValidator_Debug C$:/Users/orhan/CLionProjects/PolygonLineValidator/Main/main.cpp || cmake_object_order_depends_target_PolygonLineValidator
-  DEP_FILE = CMakeFiles\PolygonLineValidator.dir\Main\main.cpp.obj.d
+build CMakeFiles/PolygonLineValidator.dir/execute/main.cpp.obj: CXX_COMPILER__PolygonLineValidator_Debug C$:/Users/orhan/CLionProjects/PolygonLineValidator/execute/main.cpp || cmake_object_order_depends_target_PolygonLineValidator
+  DEP_FILE = CMakeFiles\PolygonLineValidator.dir\execute\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\PolygonLineValidator.dir
-  OBJECT_FILE_DIR = CMakeFiles\PolygonLineValidator.dir\Main
+  OBJECT_FILE_DIR = CMakeFiles\PolygonLineValidator.dir\execute
 
 build CMakeFiles/PolygonLineValidator.dir/geometry/Point/Point.cpp.obj: CXX_COMPILER__PolygonLineValidator_Debug C$:/Users/orhan/CLionProjects/PolygonLineValidator/geometry/Point/Point.cpp || cmake_object_order_depends_target_PolygonLineValidator
   DEP_FILE = CMakeFiles\PolygonLineValidator.dir\geometry\Point\Point.cpp.obj.d
@@ -87,7 +87,7 @@ build CMakeFiles/PolygonLineValidator.dir/io/Operations.cpp.obj: CXX_COMPILER__P
 #############################################
 # Link the executable PolygonLineValidator.exe
 
-build PolygonLineValidator.exe: CXX_EXECUTABLE_LINKER__PolygonLineValidator_Debug CMakeFiles/PolygonLineValidator.dir/Main/main.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/Point/Point.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/Polygon/Polygon.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/LineSegment/LineSegment.cpp.obj CMakeFiles/PolygonLineValidator.dir/io/Operations.cpp.obj
+build PolygonLineValidator.exe: CXX_EXECUTABLE_LINKER__PolygonLineValidator_Debug CMakeFiles/PolygonLineValidator.dir/execute/main.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/Point/Point.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/Polygon/Polygon.cpp.obj CMakeFiles/PolygonLineValidator.dir/geometry/LineSegment/LineSegment.cpp.obj CMakeFiles/PolygonLineValidator.dir/io/Operations.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PolygonLineValidator.dir

@@ -36,9 +36,3 @@ bool LineSegment::doLineSegmentsIntersect(const LineSegment &segmentFirst, const
 
     return isXWithinRangeOfSegments && isYWithinRangeOfSegments;
 }
-
-
-
-
-
-

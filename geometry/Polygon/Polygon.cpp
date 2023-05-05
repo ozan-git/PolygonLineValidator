@@ -6,8 +6,11 @@
 #include "Polygon.h"
 
 bool Polygon::isPointOnEdge(Point point, Point edgeStart, Point edgeEnd) {
-    return point.y == edgeStart.y && point.y == edgeEnd.y && point.x >= std::min(edgeStart.x, edgeEnd.x) &&
-           point.x <= std::max(edgeStart.x, edgeEnd.x);
+    double min_x = std::min(edgeStart.x, edgeEnd.x);
+    double max_x = std::max(edgeStart.x, edgeEnd.x);
+
+    return point.y == edgeStart.y && point.y == edgeEnd.y &&
+           point.x >= min_x && point.x <= max_x;
 }
 
 Point Polygon::getEdgeStart(Polygon polygon, int index) {
@@ -19,7 +22,13 @@ Point Polygon::getEdgeEnd(Polygon polygon, int index) {
 }
 
 double Polygon::calculateX(Point edgeStart, Point edgeEnd, Point point) {
-    return edgeStart.x + (point.y - edgeStart.y) * (edgeEnd.x - edgeStart.x) / (edgeEnd.y - edgeStart.y);
+    double delta_y = edgeEnd.y - edgeStart.y;
+    if (delta_y == 0)
+        return point.x;
+
+    double delta_x = edgeEnd.x - edgeStart.x;
+    double slope = delta_x / delta_y;
+    return edgeStart.x + slope * (point.y - edgeStart.y);
 }
 
 int Polygon::calculateIntersections(Point point, const Polygon &polygon) {
@@ -45,14 +54,10 @@ int Polygon::calculateIntersections(Point point, const Polygon &polygon) {
 Polygon Polygon::parsePolygon(const std::string &line) {
     Polygon polygon;
     std::stringstream ss(line);
-    std::string point;
+    std::string pointString;
 
-    while (getline(ss, point, ';')) {
-        Point p = Point::parsePoint(point);
-        polygon.vertices.push_back(p);
-    }
+    while (getline(ss, pointString, ';'))
+        polygon.vertices.emplace_back(Point::parsePoint(pointString));
 
     return polygon;
 }
-
-

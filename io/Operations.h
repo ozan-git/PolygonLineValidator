@@ -17,9 +17,13 @@
 #include "../geometry/Polygon/Polygon.h"
 
 namespace io {
+    // Test file paths
+    // const std::string INPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/input/q1_input[514].txt";
+    // const std::string OUTPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/results/q1_first_output.txt";
 
-    const std::string INPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/input/q1_input[514].txt";
-    const std::string OUTPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/output/q1_first_output.txt";
+    // Example file paths
+     const std::string INPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/input/q1_example_input[516].txt";
+     const std::string OUTPUT_FILE_PATH = "C:/Users/orhan/CLionProjects/PolygonLineValidator/test/results/q1_example_output[512].txt";
 
     std::vector<std::pair<Point, Point>> readStartEndPoints(std::ifstream &inputFile);
     std::vector<LineSegment> readPassages(std::ifstream &inputFile);

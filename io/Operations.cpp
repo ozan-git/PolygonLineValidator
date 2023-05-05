@@ -66,7 +66,7 @@ void io::processFiles() {
     }
 
     if (!outputFile.is_open()) {
-        std::cerr << "Unable to open output file." << std::endl;
+        std::cerr << "Unable to open results file." << std::endl;
         return;
     }
 
