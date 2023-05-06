@@ -166,8 +166,7 @@ Here is the picture of the visualization of the example input and results file:
 
 ![Figure_1](test/results/Figure_1.png)
 
-Here is red line segment that is not passable because it intersects with the polygon edges and passages are shown in color blue.
-Passable line segments are shown in color green.
+The figure visualizes an example input and results file, where the red line segment between two points is considered not passable as it violates the distance condition and intersects with polygon edges. The passable line segments, depicted in green, satisfy the conditions of being in the same polygon or being in different polygons with an intersecting passage. The passages are shown in blue, and it should be noted that if one or both points are outside of any polygon, the segment is considered not passable.
 
 ## Visualization
 
